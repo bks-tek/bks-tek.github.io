@@ -1,14 +1,50 @@
 <!DOCTYPE html>
 <html>
+  <head>
+    <link href='https://fonts.googleapis.com/css?family=Fira+Sans:300,400,500,700' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Source+Code+Pro:400,700' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="{{ "/css/main.css" | prepend: site.baseurl }}">
+  </head>
 
   <body>
 
-    <div class="page-content">
-      <div class="wrapper">
+    <div class="container">
+      <div class="login">
+        <p>Customer Login</p>
+      </div>
+      <header class="header">
+        <h1>
+          BK Services
+        </h1>
+        <nav class="menu">
+          <div class="menu-item"><a href="#">Home</a></div>
+          <div class="menu-item"><a href="#">About</a></div>
+          <div class="menu-item"><a href="#">Services</a></div>
+          <div class="menu-item"><a href="#">Contact</a></div>
+        <nav>
+      </header>
+
+      <div class="page-content">
+        <h1 class="hero">
+          We are a small hardware shop from California.<br>
+          We specialize in delivering solid builds with extreme quality and a dedication to detail.
+        </h1>
+
+        <h2>What types of projects</h2>
+        <p>
+        We accept all major credit cards for every package. The Annual Package also includes the option to pay by check or wire transfer (we can invoice you with net 30 terms).
+
+        </p>
+
+        <h2>Turn around time</h2>
+        <p>
+        You can upgrade to any subscription any time during your two month trial. However, if you hit the end of your trial without choosing a subscription, your account will be put on hold (your projects, files, and data will all stay safe and sound, don't worry) until you choose a subscription (or cancel).
+
+
+        </p>
+
         {{ content }}
       </div>
     </div>
-
   </body>
-
 </html>
